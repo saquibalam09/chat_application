@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+@import "tailwindcss";
+
+* {
+  font-family: "Archivo", sans-serif;
+}
+
+.truncate-1 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+  line-break: anywhere;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-60%);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(20%);
+    opacity: 1;
+  }
+}
+
+.animation1 {
+  animation: bounce 0.4s ease-in-out infinite alternate;
+  animation-delay: -0.4s;
+}
+
+.animation2 {
+  animation: bounce 0.4s ease-in-out infinite alternate;
+  animation-delay: -0.2s;
+}
+
+.animation3 {
+  animation: bounce 0.4s ease-in-out infinite alternate;
+  animation-delay: 0s;
+}
+
+@layer utilities {
+  .bg-primary {
+    background-color: #6b8afd;
+  }
+  .text-primary {
+    color: #6b8afd;
+  }
+  .border-primary {
+    border-color: #6b8afd;
+  }
+
+  .bg-secondary {
+    background-color: #2e333d;
+  }
+  .text-secondary {
+    color: #2e333d;
+  }
+  .border-secondary {
+    border-color: #2e333d;
+  }
+
+  .bg-dark {
+    background-color: #212328;
+  }
+  .text-dark {
+    color: #212328;
+  }
+  .border-dark {
+    border-color: #212328;
+  }
+
+  .bg-danger {
+    background-color: #eb3330;
+  }
+  .text-danger {
+    color: #eb3330;
+  }
+  .border-danger {
+    border-color: #eb3330;
+  }
+
+  .bg-success {
+    background-color: #4aac68;
+  }
+  .text-success {
+    color: #4aac68;
+  }
+  .border-success {
+    border-color: #4aac68;
+  }
+}
